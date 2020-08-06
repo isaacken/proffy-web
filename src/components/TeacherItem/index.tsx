@@ -3,33 +3,55 @@ import React from 'react';
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
 
 import './styles.css';
+import api from '../../services/api';
 
-function TeacherItem () {
+export interface Teacher {
+  id: number;
+  avatar: string;
+  bio: string;
+  cost: number;
+  name: string; 
+  subject: string;
+  user_id: number;
+  whatsapp: string;
+}
+
+interface TeacherItemProps {
+  teacher: Teacher;
+}
+
+const TeacherItem: React.FC<TeacherItemProps> = ({ teacher }) => {
+  function createNewConnection() {
+    api.post('connections', {
+      user_id: teacher.id
+    });
+  }
+
   return (
     <article className="teacher-item">
       <header>
-        <img src="https://pbs.twimg.com/profile_images/1254962201686933504/IcQyArlU_400x400.jpg" alt="Isaac Kennedy"/>
+        <img src={teacher.avatar} alt={teacher.name} />
         <div>
-          <strong>Isaac Kennedy</strong>
-          <span>Matemática</span>
+          <strong>{teacher.name}</strong>
+          <span>{teacher.subject}</span>
         </div>
       </header>
 
-      <p>
-        Doutorado pela Universidade de Harvard em Matemática na área de fazer as contas de quanto tempo procrastina por dia.
-        <br /><br />
-        Não sabe a tabuada do 7 completa, mas sabe somar quaisquer números de até 1 dígito.
-      </p>
+      <p>{teacher.bio}</p>
 
       <footer>
         <p>
           Preço/hora
-          <strong>R$ 0,30</strong>
+          <strong>R$ {teacher.cost}</strong>
         </p>
-        <button type="button">
+        <a 
+          onClick={createNewConnection}
+          href={`https://wa.me/${teacher.whatsapp}/?text=Olá!+Te+encontrei+no+Proffy,+pode+me+dar+mais+informações?`} 
+          target="_blank" 
+          rel="noopener noreferrer">
           <img src={whatsappIcon} alt="Whatsapp"/>
           Entrar em contato
-        </button>
+        </a>
       </footer>
     </article>
   );

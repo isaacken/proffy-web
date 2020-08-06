@@ -7,7 +7,7 @@ import TeacherForm from './pages/TeacherForm';
 
 function Routes() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Route path="/" exact component={Landing} />
       <Route path="/study" component={TeacherList} />
       <Route path="/give-classes" component={TeacherForm} />
