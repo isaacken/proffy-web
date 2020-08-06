@@ -1,29 +1,30 @@
 {
   "files": {
-    "main.css": "/proffy/static/css/main.3e14b477.chunk.css",
-    "main.js": "/proffy/static/js/main.cda7a91a.chunk.js",
-    "main.js.map": "/proffy/static/js/main.cda7a91a.chunk.js.map",
-    "runtime-main.js": "/proffy/static/js/runtime-main.50fd472a.js",
-    "runtime-main.js.map": "/proffy/static/js/runtime-main.50fd472a.js.map",
-    "static/js/2.3c201022.chunk.js": "/proffy/static/js/2.3c201022.chunk.js",
-    "static/js/2.3c201022.chunk.js.map": "/proffy/static/js/2.3c201022.chunk.js.map",
+    "main.css": "/proffy/static/css/main.51c36a47.chunk.css",
+    "main.js": "/proffy/static/js/main.36d94f6c.chunk.js",
+    "main.js.map": "/proffy/static/js/main.36d94f6c.chunk.js.map",
+    "runtime-main.js": "/proffy/static/js/runtime-main.1aaed132.js",
+    "runtime-main.js.map": "/proffy/static/js/runtime-main.1aaed132.js.map",
+    "static/js/2.2a2d43c5.chunk.js": "/proffy/static/js/2.2a2d43c5.chunk.js",
+    "static/js/2.2a2d43c5.chunk.js.map": "/proffy/static/js/2.2a2d43c5.chunk.js.map",
     "index.html": "/proffy/index.html",
-    "precache-manifest.2d09b5618c6133b3fc3d22e527137b56.js": "/proffy/precache-manifest.2d09b5618c6133b3fc3d22e527137b56.js",
+    "precache-manifest.1026d444466b4c76b732582475cb2e9d.js": "/proffy/precache-manifest.1026d444466b4c76b732582475cb2e9d.js",
     "service-worker.js": "/proffy/service-worker.js",
-    "static/css/main.3e14b477.chunk.css.map": "/proffy/static/css/main.3e14b477.chunk.css.map",
-    "static/js/2.3c201022.chunk.js.LICENSE.txt": "/proffy/static/js/2.3c201022.chunk.js.LICENSE.txt",
+    "static/css/main.51c36a47.chunk.css.map": "/proffy/static/css/main.51c36a47.chunk.css.map",
+    "static/js/2.2a2d43c5.chunk.js.LICENSE.txt": "/proffy/static/js/2.2a2d43c5.chunk.js.LICENSE.txt",
     "static/media/back.svg": "/proffy/static/media/back.dc8c47fa.svg",
     "static/media/give-classes.svg": "/proffy/static/media/give-classes.156102ee.svg",
     "static/media/landing.svg": "/proffy/static/media/landing.211f2bb0.svg",
     "static/media/logo.svg": "/proffy/static/media/logo.86fef799.svg",
     "static/media/purple-heart.svg": "/proffy/static/media/purple-heart.bfdb3ebe.svg",
     "static/media/study.svg": "/proffy/static/media/study.e7a7e1b4.svg",
+    "static/media/warning.svg": "/proffy/static/media/warning.6dfaa2f9.svg",
     "static/media/whatsapp.svg": "/proffy/static/media/whatsapp.45c6e6ec.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.50fd472a.js",
-    "static/js/2.3c201022.chunk.js",
-    "static/css/main.3e14b477.chunk.css",
-    "static/js/main.cda7a91a.chunk.js"
+    "static/js/runtime-main.1aaed132.js",
+    "static/js/2.2a2d43c5.chunk.js",
+    "static/css/main.51c36a47.chunk.css",
+    "static/js/main.36d94f6c.chunk.js"
   ]
 }
